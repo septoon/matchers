@@ -1,3 +1,3 @@
-import { compare } from './js/app';
+import { person, compare } from './js/app';
 
-console.log(compare());
+console.log(compare(person));

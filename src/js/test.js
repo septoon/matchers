@@ -1,16 +1,12 @@
-import { compare } from './app';
+import { person, compare } from './app';
 
-test('Проверка на сортировку', () => {
-  const received = [
-    { name: 'мечник', health: 10 },
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-  ];
+test('Проверка сортировки', () => {
+  const received = compare(person);
   const expected = [
     { name: 'мечник', health: 10 },
     { name: 'лучник', health: 80 },
     { name: 'маг', health: 100 },
   ];
 
-  expect(received).toBe(expected);
+  expect(received).toEqual(expected);
 });
