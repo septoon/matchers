@@ -1,4 +1,4 @@
-import { person, compare } from './app';
+import { person, compare } from '../src/js/app';
 
 test('Проверка сортировки', () => {
   const received = compare(person);
